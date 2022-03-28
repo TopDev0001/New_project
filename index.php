@@ -96,7 +96,7 @@ error_reporting(0);
         border-radius: 10px;
         -webkit-border-radius: 64px;
         margin: 5px;
-        background-image: url(img/mark.png);
+        background-image: url(img/mark_1.png);
         background-size: cover;
     }
     #cardPile div {
