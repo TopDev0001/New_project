@@ -116,6 +116,7 @@ error_reporting(0);
         width: 40px;
         background-size: contain;
         margin-left: 15px;
+        z-index: 999 !important;
     }
     div#card2 {
         background-image: url(img/cream2.png);
@@ -124,10 +125,12 @@ error_reporting(0);
         width: 55px;
         background-size: contain;
         margin-left: 10px;
+        z-index: 999 !important;
     }
     div#card3 {
         background-image: url(img/cream3.png);
         font-size: 1px;
+        z-index: 999 !important;
     }
     #cardPile div.ui-draggable-dragging {
         -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
@@ -198,49 +201,32 @@ error_reporting(0);
     function init() {
 
 
-    $( "#home_text1" ).animate({fontSize: "22px"}, {duration: 500, specialEasing: {
+    $( "#text1" ).animate({width: "100%"}, {duration: 500, specialEasing: {
           width: "easeInOutSine",
           height: "easeInOutSine",
         },
         complete: function() {
             $( "#home_text2" ).animate({fontSize: "40px"}, {duration: 500,
                 complete: function() {
-                    $( "#home_text3" ).animate({width: "toggle"}, {duration: 400,
+                    $( "#home_text3" ).animate({width: "toggle"}, {duration: 500,
                         // specialEasing: {
                         //     width: "easeInOutSine",
                         //     height: "easeInOutSine",
                         //     },
                         complete: function() {
-                            $( "#home_text4" ).animate({width: "toggle"}, {duration: 400
-
+                            $( "#home_text4" ).animate({width: "toggle"}, {duration: 500,
+                                
+ specialEasing: {
+                            width: "easeInOutSine",
+                            height: "easeInOutSine",
+                            },
                             });
-
-
                         }
                     });
                 }
             });
         }
     });
-
-        // $('#successMessage').hide();
-        // $('#home_text1').hide();
-        // $('#home_text2').hide();
-        // $('#home_text3').hide();
-        // $('#home_text4').hide();
-
-        // $('#home_text1').show(200,function(){
-        //     $('#home_text2').show(200,function(){
-        //         $('#home_text3').show(200,function(){
-        //             $('#home_text4').show(200,function(){
-                          
-
-        //             });
-        //         });
-
-        //     });
-        // });
-
 
         $('#successMessage').css({
 
@@ -418,11 +404,11 @@ error_reporting(0);
                 </div>
 
                 <div class="col-md-6 col-lg-6 text_div col-sm-12" style="text-align: center;">
-
+<div id="text1" class="text1">
                     <h4 class="home_text1" id="home_text1">Kulitnya menjadi kering kerana berada di dalam <br>bilik berhawa dingin
 
                         sepanjang hari.</h4>
-
+</div>
                     <h2 class="home_text2"  id="home_text2" style="color:#1b2a65"> Raya Ini, Pilih Kebaikan!</h2>
                     <div class="home_text3" id="home_text3" >
                         <div>
@@ -452,7 +438,7 @@ error_reporting(0);
 
                                     </div>
                               
-                                <div style="padding: 60px 0px 0px 0px;" class=" col-sm-6 des_div">
+                                     <div style="padding: 60px 0px 0px 0px;" class=" col-sm-6 des_div">
 
                                             <div class="col-md-1">
 
@@ -468,10 +454,8 @@ error_reporting(0);
 
                                             </div>
 
+                                       </div>                         
                                 </div>
-
-                               
-                     </div>
 
                 
                      </div>
