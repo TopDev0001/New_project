@@ -1,0 +1,316 @@
+/* @font-face {
+    font-family: 'Cronos Pro Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cronos Pro Italic'), url('Cronos-Pro-Italic_12440.woff') format('woff');
+    } */
+@font-face {
+    font-family: 'Cronos Pro Display';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Cronos Pro Display'), url('Cronos-Pro-Display_12439.woff') format('woff');
+    }
+body {
+    font-family: 'Cronos Pro Display' !important;
+    
+    /* Cronos Pro */
+    margin:0px;
+    padding:0px !important;
+    overflow-x:hidden;
+    color:#555555;
+    }
+        
+@media only screen and (hover: none) and (pointer: coarse) { 
+    .back_section {
+        background-image: none !important;         
+    }    
+    .home_text1{
+        font-size: 40px;
+        margin-top: 20%;
+    }
+    .text_div{
+        height: 100vh;
+    }
+    .home_text2{
+        font-size: 80px;
+    }
+    .home_text3_1{
+        font-size: 80px;
+    }
+    .home_text3_2{
+        font-size: 40px;
+    }
+    .home_text4{
+        margin-top: 40px;
+    }
+    .small_image{
+        display: block !important;
+        width: 100%;
+    }
+    .girl_image{
+        width: 180%;
+        margin-left: -40px;
+    }
+    .row_div{
+        display: flex;
+    }
+    .logo_image{
+        height: 100px !important;
+        width: 120px !important;
+    }
+    .cardPile_div{
+        margin-left: 270px;
+        margin-top: 50px;
+    }
+    .des_div{
+     
+        margin-left: 200px;
+    }
+    .finger_image{
+        margin-left: -200px !important;
+        margin-top: -100px  !important;
+    }
+    .drag_text{
+        font-size: 22px;
+     
+    }
+    .wave_image{
+        display: block !important;        
+    }
+    .wave{
+        width: 130%;
+        height: 500px;        
+        padding: 0px;
+        margin-left: -200px;
+        margin-top: -130px;
+    }
+    .cards{
+        position: absolute;
+        z-index: 99;
+        margin-top: 84%;
+        margin-left: 29%;
+    }
+    .cream_image{
+        padding-left: 100px !important;
+    }
+
+    .next_section {
+        background-image: none !important;  
+        background-color: white !important;
+    }   
+    .popup{
+        top: 20% !important;
+        left: 50% !important;
+    }
+    .girl2_div{
+        display: block !important;
+  
+    }
+    .girl2_image{
+ 
+        width: 100%;
+        margin-top:40% 
+    }
+    .box_image{
+        width: 800px !important;
+        height: 600px !important;
+    }
+    .pop_fist_line{
+        text-align: center !important;
+        font-size: 40px !important;
+    }
+    .pop_second_line{
+        text-align: center !important;
+         font-size: 60px !important;
+    }
+    .box_div{
+        width: 100% !important;
+        margin-top: 150px !important;
+    }
+    .pop_text{
+        margin-left: 0px !important;
+        margin-top: 200px !important;
+    }
+    .form_text1{
+        font-size: 22px;
+    }
+    .form_text2{
+        font-size: 22px;
+    }
+    .formqv{
+        margin-top: 10px !important;
+    }
+    .video_section{
+        width: 155% !important;
+    }
+    .video_container{
+        width: 80%; 
+        text-align: center;
+       
+    }
+    .text_group{
+        width: 70%;
+        margin-top: 150px;
+        margin-left: 70px;
+    }
+    .video_box_div{
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+    .video_first_line{
+        font-size: 50px !important;
+    }
+    .video_second_line{
+        font-size: 80px !important;
+        margin-top: 50px;
+        
+    }
+    .video_text1{
+        font-size: 20px;
+    }
+    .video_text2{
+        font-size: 20px;
+        
+    }
+    .platform_text{
+        margin-top: 150px !important;
+        width: 80% !important;
+        margin-left: 80px !important;
+    }
+    .platform_second_line{
+        font-size: 60px !important;
+        margin-top: 40px !important;
+    }
+    .platform_first_line{
+        font-size: 30px !important;
+    }
+    .platform_image_div{
+        margin-left: -120px;
+    }
+}
+
+
+
+
+
+
+
+.pop_fist_line{
+    font-size:19px;
+    color: #293D8A;
+}
+.pop_second_line{
+    font-size:30px;
+    color: #293D8A;
+}
+.pop_text{
+    margin-top: 120px;
+    margin-left:50px;
+}
+.video_first_line{
+    color: #293D8A;
+    font-size:17px; 
+}
+.video_second_line{
+    color: #293D8A; 
+    font-size:30px;
+}
+.video_text{
+    margin-top: 120px;
+    margin-left: 100px;
+}
+.platform_first_line{
+    color: #293D8A;
+    font-size:17px; 
+
+}
+.platform_second_line{
+    color: #293D8A;
+    font-size:35px;
+
+}
+.platform_image{
+    width: 800px;
+    height: 450px;
+}
+.platform_sub{
+    margin:0px;
+}
+.finger_image{
+    height: 80px;
+    margin-left:-20px;
+    margin-top: -10px;
+}
+.home_text1{
+    color: #1b2a65;
+    font-size: 0px ;
+    
+}
+
+.back_section {
+    background-image: url("../images/back1.jpg") ; 
+    min-height: 100%;
+    /* width: 100%;*/
+    height: 100vh; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;     
+}
+.next_section {
+    background-image: url("../images/back1.jpg") ; 
+    min-height: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.contain_div{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+}
+.box_image{
+    width: 500px;
+    height: 400px;
+    margin-top: -150px;
+}
+.formqv{
+    margin-top: -100px;
+}
+.home_text4{
+   overflow: initial !important;
+   display: none;
+} 
+.small_image{
+        display: none;
+}
+.wave_image{
+    display: none;
+}
+.drag_text{
+   margin-left: 20px;
+ 
+}
+.cardSlots_div{
+    padding-left:0px !important;
+    margin-top: 30px;
+}
+    /* .cards{
+        margin-top: 115px;
+        margin-left: -19px;
+    } */
+.girl2_div{
+    display: none;
+}
+.home_text2{
+    font-size: 0px;
+}
+.home_text3{
+   display: none;
+}
