@@ -96,7 +96,7 @@ error_reporting(0);
         border-radius: 10px;
         -webkit-border-radius: 64px;
         margin: 5px;
-        background-image: url(img/mark_1.png);
+        background-image: url(img/mark.png);
         background-size: cover;
     }
     #cardPile div {
@@ -200,6 +200,22 @@ error_reporting(0);
 
     function init() {
 
+    $("#next_button").bind('touchstart mousedown', function(event){
+            event.preventDefault();
+        location.replace("index2.php");
+
+    });
+    $("#before_button").bind('touchstart mousedown', function(event){
+            event.preventDefault();
+        init();
+
+    });
+    document.addEventListener("touchstart", touchHandler, true);
+    document.addEventListener("touchmove", touchHandler, true);
+    document.addEventListener("touchend", touchHandler, true);
+    document.addEventListener("touchcancel", touchHandler, true);
+    document.addEventListener("touchcancel", touchHandler, true);
+
 
     $( "#text1" ).animate({width: "100%"}, {duration: 500, specialEasing: {
           width: "easeInOutSine",
@@ -216,10 +232,6 @@ error_reporting(0);
                         complete: function() {
                             $( "#home_text4" ).animate({width: "toggle"}, {duration: 500,
                                 
- specialEasing: {
-                            width: "easeInOutSine",
-                            height: "easeInOutSine",
-                            },
                             });
                         }
                     });
@@ -311,6 +323,8 @@ error_reporting(0);
         }
     }
 
+  
+
     function handleCardDrop(event, ui) {
 
         var slotNumber = $(this).data('number');
@@ -364,6 +378,23 @@ error_reporting(0);
         }
     }
 
+    function touchHandler(event) {
+    var touch = event.changedTouches[0];
+
+    var simulatedEvent = document.createEvent("MouseEvent");
+        simulatedEvent.initMouseEvent({
+        touchstart: "mousedown",
+        touchmove: "mousemove",
+        touchend: "mouseup"
+    }[event.type], true, true, window, 1,
+        touch.screenX, touch.screenY,
+        touch.clientX, touch.clientY, false,
+        false, false, false, 0, null);
+
+    touch.target.dispatchEvent(simulatedEvent);
+    event.preventDefault();
+}
+
     </script>
 
 </head>
@@ -395,9 +426,9 @@ error_reporting(0);
 
                         <h2>Tahniah!</h2>
 
-                        <button onclick="init()">Main lagi</button>
+                        <button onclick="init()" id = "before_button">Main lagi</button>
 
-                        <a href="index2.php"><button> Seterusnya </button></a>
+                        <a href="index2.php"><button id = "next_button"> Seterusnya </button></a>
 
                     </div>
 
